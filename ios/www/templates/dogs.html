@@ -1,0 +1,45 @@
+<ion-view >
+  
+<div class="bar bar-header custom_header">
+  <div class="plus_btn " ng-click="goAddDogs()">
+      <i class="ion-ios-plus-outline font30"></i>
+  </div>
+  <div style="width:75%; text-align:center">
+	<h3 style="">Who's the DogStar?</h3>
+  </div>
+</div>
+  <ion-content class="scroll-content" style="margin-top:150px;">
+	  <div class="list">
+		<a class="item  ads_item" ng-click="gotoDetail();">
+				<div class=" ads_img" style="background:url('img/aaa.png');"></div>
+				<div class="row">
+					<div class="col-33 content-center">
+						<img src="img/dog1.png" class="width-100" style="margin-top:10px;"/>
+					</div>
+					<div class="col-67" style="padding-left:10px; padding-top:30px; text-align:center;">
+						<div class="font16">LUNA</div>
+						<div class="font16 margin-top-5">3 YEARS</div>
+						<div class="font16 margin-top-5">SIBERIAN HUSKY</div>
+					</div>
+				</div>
+
+		</a>
+
+		<a class="item  ads_item"  ng-click="gotoDetail();">
+				<div class=" ads_img" style="background:url('img/aaa.png');"></div>
+				<div class="row">
+					<div class="col-33 content-center">
+						<img src="img/dog2.png" class="width-100" style="margin-top:10px;"/>
+					</div>
+					<div class="col-67" style="padding-left:10px; padding-top:30px; text-align:center;">
+						<div class="font16 ">BARBIE</div>
+						<div class="font16 margin-top-5 ">9 YEARS</div>
+						<div class="font16 margin-top-5">MASTIFF</div>
+					</div>
+				</div>
+
+		</a>
+	  </div>
+	  <div class="width-100 content-center margin-top-5" ng-if="doglist.length <1">There are no any dogs data.</div>
+  </ion-content>
+</ion-view>

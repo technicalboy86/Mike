@@ -1,0 +1,72 @@
+<ion-view >
+
+  <ion-content style="padding-top:50px; background:#f69544" scroll="false" >
+      
+      <div class="bar bar-header custom_header1">
+          <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="goBack();"></a>
+          
+          <div class="title">
+              <img src="img/logo.png" style="width:100px; margin-top:10px;"/>
+          </div>
+      </div>
+      
+	  <div class="white-color font22 width-100 content-center" style="margin-top:50px;">
+		Moods of
+	  </div>
+	  <div class="dog_profile_rect row">
+		<div class="col-50"><div class="white-color" style="margin-top:20px;">LUNA</div></div>
+		<div class="col-50">
+            <img class="dog_profile_img" src="img/dog1.png" class="width-80"/>
+		</div>		
+	  </div>
+
+	  <div class="width-80 content-center" >
+		<img src="img/dog3.png" />
+		<h2>Happiness</h2>
+	  </div>
+	  <div class="day_tab row content-center">
+		<div class="col-25"><span class="active">&nbsp;&nbsp;DAY&nbsp;&nbsp;</span></div>
+		<div class="col-25"><span >&nbsp;&nbsp;WEEK&nbsp;&nbsp;</span></div>
+		<div class="col-25"><span >&nbsp;&nbsp;MONTH&nbsp;&nbsp;</span></div>
+		<div class="col-25"><span >&nbsp;&nbsp;YEAR&nbsp;&nbsp;</span></div>
+	  </div>
+	 <!-- <div class="date_txt">WED June 26th 2015</div> -->
+	 
+	  <div id="chartContainer" style="height: 200px; width: 100%;" on-swipe-left="goDetailTxt()"		ng-if="!showDetail"></div>	 
+
+	 <div class="detail_rect" ng-if="showDetail"  on-swipe-right="goGraph()" >
+		  <div class="row white-color width-80">
+			<div class="col-50">Happiness total</div>
+			<div class="col-50 font-bold">04h 25min</div>
+		  </div>
+		  <div class="row white-color width-80">
+			<div class="col-50">Happiness peak</div>
+			<div class="col-50 font-bold">06:25-09:32am</div>
+		  </div>
+		  <div class="row white-color width-80">
+			<div class="col-50">Negativity</div>
+			<div class="col-50 font-bold">00h 12min</div>
+		  </div>
+		  <div class="row white-color width-80">
+			<div class="col-50">Negativity peak</div>
+			<div class="col-50 font-bold">01:25-01:32pm</div>
+		  </div>
+		  <div class="row white-color width-80">
+			<div class="col-50">Melancholy</div>
+			<div class="col-50 font-bold">0h 0min</div>
+		  </div>
+		  <div class="row white-color width-80">
+			<div class="col-50">Melancholy peak</div>
+			<div class="col-50 font-bold"></div>
+		  </div>
+		  <div class="row white-color width-80">
+			<div class="col-50">Social activity total</div>
+			<div class="col-50 font-bold">06h 47min</div>
+		  </div>
+		  <div class="row white-color width-80">
+			<div class="col-50">Social activity peak</div>
+			<div class="col-50 font-bold">07:02-09:32am</div>
+		  </div>	
+	 </div>
+  </ion-content>
+</ion-view>
